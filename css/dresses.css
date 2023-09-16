@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #F24D85;
+    --seconadary-color: #6fd6ff;
+    --background-light-pink: #f4e9ed;
+    --background-light-blue: #e0f6ff;
+    --primary-title-color: #6b6b6b;
+    --secondary-text-color: #737373;
+    --distinguish-color: #128aac;
+    --shadow-color: #9b9b9b;
+    --white-color: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white-color);
+}
+
+/* estilos generales para las pestañas secundarias */
+.container__title {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.secondary__title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+
+.container-dresses {
+    min-width: 365px;
+    width: 90%;
+    height: auto;
+    margin: 60px auto 100px;
+}
+.container-dresses__cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 24px;
+    width: 100%;
+    height: auto;
+}
+
+.dresses__card {
+    width: 90%;
+    height: 340px;
+    background-color: var(--background-light-pink);
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.dresses-card__img {
+    width: 90%;
+    height: 70%;
+    margin: 0 auto ;
+    padding-top: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.dresses-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.dresses-card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    padding: 8px;
+    text-align: center;
+}
+.dresses-card__info p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    color: var(--distinguish-color);
+    margin-bottom: 6px;
+}
+.dresses-card__info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    color: var(--primary-color);
+}

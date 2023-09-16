@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #F24D85;
+    --seconadary-color: #6fd6ff;
+    --background-light-pink: #f4e9ed;
+    --background-light-blue: #e0f6ff;
+    --primary-title-color: #6b6b6b;
+    --secondary-text-color: #737373;
+    --distinguish-color: #128aac;
+    --shadow-color: #9b9b9b;
+    --white-color: #ffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--white-color);
+}
+
+
+/* estilos generales para las pestañas secundarias */
+.container__title {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.secondary__title {
+    font-size: 2.6rem;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+
+/* estilos del contenedor principal */
+.container-books {
+    position: relative;
+    min-width: 365px;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+/* contenedor de tarjetas de los libros */
+.container-books__cards {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 60px;
+}
+.books-card {
+    position: relative;
+    min-width: 160px;
+    width: 200px;
+    max-width: 220px;
+    min-height: 340px;
+    height: 400px;
+    max-height: 400px;
+    margin: 0 auto 40px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16)
+}
+.books-card .books-card__img {
+    width: 100%;
+    height: 60%;
+}
+.books-card .books-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.books-card .books-card__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+}
+.books-card .books-card__title {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    color: var(--primary-title-color);
+}
+.books-card .books-card__author {
+    display: block;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1rem;
+    color: #b8b8b8;
+}
+.books-card .books-card__price {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+    color: var(--seconadary-color);
+}
+.books-card .books-card__button {
+    position: absolute;
+    bottom: 6px;
+    left: calc(50% - 45%);
+    width: 90%;
+    height: 24px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: var(--white-color);
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+
+
+
+
+.book-description {
+    display: none;
+}
+.book-description__card {
+    display: grid;
+    grid-template-rows: 5% 8% 30% 35% 5% auto;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    min-width: 350px;
+    width: 350px;
+    height: 95vh;
+    background-color: var(--background-light-blue);
+    border-radius: 10px;
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, .3);
+}
+.close-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('../assets/icon/cruz.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.close-icon.close-icon--margin {
+    margin: 10px 0 0 10px;
+}
+.book-description__title {
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    color: var(--primary-title-color);
+    align-self: center;
+}
+.book-description__images {
+    position: relative;
+    width: 160px;
+    height: 194px;
+    margin: 0 auto 10px;
+}
+#book-description__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book-description__texts {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    overflow: auto;
+}
+.book-description__subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    color: var(--primary-title-color);
+    margin-bottom: 6px;
+}
+.book-description__summary {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+}
+.book-description__price {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    color: var(--primary-color);
+}
+.botton__line--margin {
+    margin: 10px 0 10px;
+}
+
+
+
+.product-description__pay {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.product-description__pay .pay-way {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0 0 10px;
+}
+.product-description__pay .pay-contacto {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 6px;
+}
+.product-description__pay .pay-contacto a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icon/whatsapp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: -4px;
+}
+.product-description__pay .pay-data {
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1rem;
+    color: var(--primary-title-color);
+}

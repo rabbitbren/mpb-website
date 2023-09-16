@@ -1,0 +1,387 @@
+:root {
+    --primary-color: #F24D85;
+    --seconadary-color: #6fd6ff;
+    --background-light-pink: #f4e9ed;
+    --background-light-blue: #e0f6ff;
+    --primary-title-color: #6b6b6b;
+    --secondary-text-color: #737373;
+    --distinguish-color: #128aac;
+    --shadow-color: #9b9b9b;
+    --white-color: #ffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--white-color);
+}
+
+/* estilos generales perteneciente a los titulos */
+.title {
+    color: var(--primary-title-color);
+    font-weight: bold;
+}
+.botton__line {
+    width: 100%;
+    height: 6px;
+    background-color: #f5f5f5;
+    border: none;
+    margin: 24px 0 60px;
+}
+
+
+.header {
+    
+    width: 100%;
+    height: auto;
+}
+
+/* barra navegadora de la cabecera */
+.nav {
+    position: relative;
+    min-width: 365px;
+    width: 100%;
+    min-height: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.nav__logo {
+    width: 80px;
+    min-height: 35px;
+    height: 40px;
+    background-image: url('../assets/icon/isotipo_mpb-header.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.nav-hamburger {
+    display: block;
+}
+.nav .nav-hamburger__icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icon/menu-hamburguesa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* lista del navegador hamburguesa */
+.nav-hamburger__list {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    animation: slide 1 .5s linear;
+}
+@keyframes slide {
+    0% {
+        opacity: 0.2;
+        translate: 500px;
+    }
+    20% {
+        opacity: 0.4;
+        translate: 400px;
+    }
+    40% {
+        opacity: 0.6;
+        translate: 300px;
+    }
+    60% {
+        opacity: 0.8;
+        translate: 200px;
+    }
+    80% {
+        opacity: 1;
+        translate: 100px;
+    }
+}
+
+.close-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('../assets/icon/cruz.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-hamburger__items {
+    width: 100%;
+    list-style: none;
+    margin-top: 14px;
+}
+.nav-hamburger__item {
+    padding: 20px;
+}
+.nav-hamburger__item a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--white-color);
+}
+
+
+.nav-menu {
+    display: none;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+.nav-menu__item {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav-menu__ref {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+.nav-menu__ref:hover {
+    color: var(--seconadary-color);
+}
+.nav .nav-menu__item:nth-child(1) > a {
+    color: var(--distinguish-color);
+    font-weight: bold;
+}
+.nav .nav-menu__item:nth-child(1) > a:hover {
+    color: var(--seconadary-color);
+    font-weight: bold;
+}
+
+/* slider de la cabecera */
+.container-slider {
+    position: relative;
+    min-width: 365px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    width: 300%;
+    min-height: 300%;
+    height: 52vh;
+    max-height: 800px;
+    margin-left:  -100%;
+}
+.slider__section {
+    width: 100%;
+}
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.slider__btn--right {
+    right: 10px;
+    background-image: url('../assets/icon/angulo-derecho.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slider__btn--left {
+    left: 10px;
+    background-image: url('../assets/icon/angulo-izquierdo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* contenedor general de informacion */
+.container {
+    min-width: 365px;
+    width: 100%;
+    height: auto;
+}
+/* seccion de presentacion del contenedor general */
+.presentation {
+    width: 90%;
+    height: auto;
+    margin: 60px auto 60px;
+}
+.presentation .presentation__title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    text-align: center;
+}
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: #96daff;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+.presentation .presentation__text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: var(--secondary-text-color);
+}
+
+
+.categories {
+    min-width: 365px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 100px;
+}
+.subtitle--margen {
+    margin: 0 0 20px 5%;
+}
+.categories .categories__cards {
+    padding-top: 40px;
+}
+.categories .categories__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 220px;
+    width: 280px;
+    max-width: 340px;
+    min-height: 220px;
+    height: 280px;
+    max-height: 340px;
+    margin: 0 auto 20px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 6px 6px 8px var(--shadow-color);
+    cursor: pointer;
+}
+.categories .categories__card:hover {
+    transform: scale(30px);
+}
+.categories .categories__books {
+    background-image: url('../assets/img/categoriesBOOKS.jpg');
+}
+.categories .categories__toys {
+    background-image: url('../assets/img/categoriesTOYS.jpg');
+}
+.categories .categories__dresses {
+    background-image: url('../assets/img/categoriesDRESS.jpg');
+}
+@keyframes showSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    50% {
+        opacity: .5;
+        transform: translateX(-30);
+    }
+}
+
+.categories .categories__card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 16px;
+}
+.categories .categories__card a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--white-color);
+    z-index: 1;
+}
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 365px;
+    width: 100%;
+    height: auto;
+    background-color: #08181c;
+    padding: 40px 20px;
+}
+.footer__logo {
+    width: 140px;
+    height: 80px;
+    background-image: url('../assets/icon/isotipo_mpb-footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__social-media {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin: 26px 0;
+}
+.footer__icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer__icon-whatsapp {
+    background-image: url('../assets/icon/whatsappFooter.png');
+}
+.footer__icon-facebook {
+    background-image: url('../assets/icon/facebook.png');
+}
+.footer__icon-gmail {
+    background-image: url('../assets/icon/envelope.png');
+}
+.footer__social-info span {
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    color: var(--white-color);
+    vertical-align: 6px;
+    margin-left: 4px;
+}
+
+.nav-menu__ref--color {
+    color: #128aac;
+}
+.nav-menu__ref--color:hover {
+    color: var(--background-light-blue);
+}
+
+
+
+

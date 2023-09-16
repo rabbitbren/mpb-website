@@ -1,0 +1,26 @@
+.doll-banner__images {
+    height: 650px;
+}
+.container-toys__cards {
+    padding: 40px 120px 40px;
+}
+.toys-cards {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.product-description__card {
+    width: 60%;
+}
+
+.product-description__info .product-data span {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+.product-description__info .product-data p {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+
+.product-data.product-description__price p {
+    font-size: 1.7rem;
+}

@@ -1,0 +1,16 @@
+.container-books__cards {
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.book-description__title {
+    font-size: 1.4rem;
+}
+.book-description__subtitle {
+    font-size: 1.2rem;
+}
+.book-description__summary  {
+    font-size: 1rem;
+}
+.book-description__price {
+    font-size: 1.4rem;
+}

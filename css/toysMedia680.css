@@ -1,0 +1,94 @@
+.doll-banner {
+    display: flex;
+    padding-bottom: 0;
+    background-color: var(--background-light-pink);
+}
+.doll-banner__text {
+    display: flex;
+    align-items: center;
+}
+.doll-banner__images img {
+    width: 100%;
+}
+
+.container-toys__cards {
+    padding: 40px 50px 40px;
+}
+.container-toys__cards--background {
+    padding-top: 80px;
+}
+.toys-cards {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.toy-card {
+    height: 360px;
+}
+
+
+.product-description__card {
+    width: 90%;   
+    grid-template-rows: 5% 5% auto 5% 15%;
+    grid-template-columns: 60% 40%;
+}
+.close-icon--display {
+    grid-area: 1 / 1/ 2/ 3;
+}
+.product-description__title {
+    grid-area: 2 / 1/ 3/ 3;
+}
+.description__images {
+    width: 98%;
+    height: 100%;
+    margin: 0;
+    justify-self: flex-end;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 20% auto;
+}
+
+
+
+.product-description__info .product-data span {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    align-self: center;
+}
+.product-description__info .product-data p {
+    font-size: .9rem;
+    align-self: center;
+}
+.product-description__info .product-data:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+.product-description__info .product-data:nth-child(2) span {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+.product-description__info--grid-dress .product-data:nth-child(2) {
+    display: grid;
+}
+.product-description__info--grid-dress .product-data:nth-child(2) span{
+    align-self: center;
+    margin-bottom: 0;
+}
+.product-description__info--grid-dress .product-data:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+}
+.product-description__info--grid-dress .product-data:nth-child(3) span {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+.product-data.product-description__price p {
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+
+.botton__line--grid {
+    grid-area: 4 / 1/ 5/ 3;
+    align-self: center;
+}
+.product-description__pay {
+    grid-area: 5 / 1/ 6/ 3;
+}

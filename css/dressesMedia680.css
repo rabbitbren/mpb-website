@@ -1,0 +1,6 @@
+.container-dresses__cards {
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 24px;
+}
+
+

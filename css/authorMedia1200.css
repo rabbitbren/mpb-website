@@ -1,0 +1,9 @@
+.container-author .author-card {
+    column-gap: 25px;
+    width: 60%;
+    padding: 40px;
+}
+
+.other-books__description-container {
+    width: 60%;
+}

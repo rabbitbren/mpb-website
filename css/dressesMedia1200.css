@@ -1,0 +1,10 @@
+.container-dresses {
+    width: 80%;
+}
+.container-dresses__cards {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    row-gap: 26px;
+}
+.description__images-dresses {
+    height: 50%;
+}

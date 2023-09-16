@@ -1,0 +1,10 @@
+.categories__cards {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 90%;
+    margin: 40px auto 0;
+}
+
+.slider {
+    height: 90vh;
+}
