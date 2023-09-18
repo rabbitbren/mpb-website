@@ -40,7 +40,7 @@ body {
 /* estilos del contenedor principal */
 .container-books {
     position: relative;
-    min-width: 365px;
+    min-width: 350px;
     width: 100%;
     height: auto;
     margin-top: 40px;
@@ -127,16 +127,16 @@ body {
 }
 .book-description__card {
     display: grid;
-    grid-template-rows: 5% 8% 30% 35% 5% auto;
+    grid-template-rows: 5% 8% 30% 32% 5% auto;
 
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
-    min-width: 350px;
-    width: 350px;
-    height: 95vh;
+    min-width: 330px;
+    width: 340px;
+    height: 90vh;
     background-color: var(--background-light-blue);
     border-radius: 10px;
     box-shadow: 8px 5px 12px rgba(0, 0, 0, .3);
@@ -164,7 +164,7 @@ body {
 .book-description__images {
     position: relative;
     width: 160px;
-    height: 194px;
+    height: 100%;
     margin: 0 auto 10px;
 }
 #book-description__img {
