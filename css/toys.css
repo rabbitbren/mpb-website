@@ -38,7 +38,7 @@ body {
 
 .container-toys {
     position: relative;
-    min-width: 365px;
+    min-width: 350px;
     width: 100%;
     height: auto;
     margin-top: 40px;
@@ -80,7 +80,7 @@ body {
 
 
 .doll-banner {
-    min-width: 350px;
+    min-width: 320px;
     width: 100%;
     height: auto;
     margin: 0 auto 80px;
@@ -90,7 +90,7 @@ body {
 .doll-banner__text {
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px 10px 0 0;
 }
 .doll-banner__text p {
@@ -105,7 +105,7 @@ body {
     justify-content: center;
 }
 .doll-banner__images img {
-    width: 350px;
+    width: 340px;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
@@ -175,16 +175,16 @@ body {
 }
 .product-description__card {
     display: grid;
-    grid-template-rows: 5% 4% auto 20% 4% 20%;
+    grid-template-rows: 5% 4% auto 16% 4% 30%;
 
     position: fixed;
     z-index: 4;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 360px;
-    min-width: 350px;
-    height: 98vh;
+    width: 345px;
+    min-width: 340px;
+    height: 92vh;
     margin: 0 auto;
     background-color: #efd3dd;
     border-radius: 10px;
