@@ -175,7 +175,7 @@ body {
 }
 .product-description__card {
     display: grid;
-    grid-template-rows: 5% 4% auto 16% 4% 30%;
+    grid-template-rows: 5% 4% 50% 20% 4% auto;
 
     position: fixed;
     z-index: 4;
