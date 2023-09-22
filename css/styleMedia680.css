@@ -34,6 +34,12 @@
 .footer__social-media {
     grid-area: 1 / 1 /2 / 2;
 }
+.footer__social-info-whatsapp a:nth-child(1) {
+    display: none;
+}
+.footer__social-info-whatsapp a:nth-child(2) {
+    display: flex;
+}
 .nav-list {
     grid-column: 1 / 3;
     justify-content: center;

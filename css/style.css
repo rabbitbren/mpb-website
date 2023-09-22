@@ -353,6 +353,17 @@ body {
     row-gap: 12px;
     margin: 26px 0;
 }
+.footer__social-info a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.footer__social-info-whatsapp a:nth-child(2) {
+    display: none;
+}
 .footer__icon{
     display: inline-block;
     width: 20px;
