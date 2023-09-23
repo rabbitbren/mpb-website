@@ -39,6 +39,12 @@
     grid-area: 5/ 1/ 6/ 3;
     align-self: center;
 }
+.pay-contacto.pay-contacto__phone {
+    display: none;
+}
+.pay-contacto.pay-contacto__pc {
+    display: flex;
+}
 
 
 

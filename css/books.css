@@ -220,22 +220,25 @@ body {
     margin: 0 0 10px;
 }
 .product-description__pay .pay-contacto {
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    font-size: .9rem;
+    text-decoration: none;
     color: var(--secondary-text-color);
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
-.product-description__pay .pay-contacto a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
+.product-description__pay .pay-contacto__icon {
+    width: 18px;
+    height: 18px;
     background-image: url('../assets/icon/whatsapp.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    vertical-align: -4px;
+}
+.pay-contacto.pay-contacto__pc {
+    display: none;
 }
 .product-description__pay .pay-data {
     font-size: .8rem;
