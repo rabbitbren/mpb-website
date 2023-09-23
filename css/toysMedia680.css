@@ -92,3 +92,10 @@
 .product-description__pay {
     grid-area: 5 / 1/ 6/ 3;
 }
+
+.pay-contacto.pay-contacto__phone {
+    display: none;
+}
+.pay-contacto.pay-contacto__pc {
+    display: flex;
+}
