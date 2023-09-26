@@ -18,7 +18,7 @@ const closeSection = () => {
 
 
 /**Doll banner funcion */
-const imgBanner = document.getElementById('doll-banner__img');
+/**const imgBanner = document.getElementById('doll-banner__img');
 const imagesBanner = [
     './assets/img/toys/doll-banner-1.jpg',
     './assets/img/toys/doll-banner-2.jpg',
@@ -36,7 +36,7 @@ const changeImg = () => {
     }
 }
 changeImg()
-setInterval(changeImg, 4000);
+setInterval(changeImg, 4000);*/
 
 
 
