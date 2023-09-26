@@ -182,9 +182,9 @@ body {
 .slider {
     display: flex;
     width: 300%;
-    min-height: 300%;
+    /* min-height: 300%; */
     height: 52vh;
-    max-height: 800px;
+    /* max-height: 800px; */
     margin-left:  -100%;
 }
 .slider__section {
