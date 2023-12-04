@@ -121,13 +121,13 @@ const putSize = (cardSelect, placeSize, size) => {
 /**----------------------------- VESTIDO DESCRIPCION ---------------------------------------- */
 const dressDescription = document.getElementById('product-text');
 const textDescriptionDress = [
-    'Vestido de tusor en color rosa liso, en combinación con tela estampada y terminaciones en volados y puntilla. Composición 100% algodón.',
-    'Vestido "mil rayas" color celeste y blanco con detalles de bolsillos y puntilla en blanco. Composición 100% algodón.',
-    'Vestido de tusor liso en color celeste con detalles de encaje y puntilla en blanco. Composición 100% algodón.',
-    'Vestido de tusor liso en color ocre amarillo con interior de estampado a rayas blanco y negro. Composición 100% algodón.',
-    'Vestido de pique en color celeste con lunares blancos, detalle de bolsillos y terminaciones en volados de batista y puntilla. Composición 100% algodón.',
-    'Vestido de tusor liso color amarillo con puntilla hilo ancha en color blanco, con doble falda y terminaciones en volados de batista. Composición 100% algodón.',
-    'Vestido de tusor liso color anaranjado con puntilla hilo ancha en color crudo, con doble falda y terminaciones en volados de broderie. Composición 100% algodón.'
+    'Vestido de tusor en color rosa liso, en combinación con tela estampada y terminaciones en volados y puntilla.',
+    'Vestido "mil rayas" color celeste y blanco con detalles de bolsillos y puntilla en blanco.',
+    'Vestido de tusor liso en color celeste con detalles de encaje y puntilla en blanco.',
+    'Vestido de tusor liso en color ocre amarillo con interior de estampado a rayas blanco y negro.',
+    'Vestido de pique en color celeste con lunares blancos, detalle de bolsillos y terminaciones en volados de batista y puntilla.',
+    'Vestido de tusor liso color amarillo con puntilla hilo ancha en color blanco, con doble falda y terminaciones en volados de batista.',
+    'Vestido de tusor liso color anaranjado con puntilla hilo ancha en color crudo, con doble falda y terminaciones en volados de broderie'
 ];
 const putDescription = (cardSelect, description, placeDescrition) => {
     cardSelect.addEventListener('click', () => {
